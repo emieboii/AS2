@@ -5,23 +5,7 @@ namespace AS2
 
     public class Student
     {
-        private int _id;
-
-        public int Id
-        {
-            get{ return _id; }
-            set
-            { 
-                if(value < 0)
-                {
-                    _id = -1;
-                }
-                else
-                {
-                    _id = value;
-                }
-            }
-        }
+        public readonly int _id;
 
         public string GivenName { get; set; }
 
